@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button(props: any) {
   return (
-    <button className="bg-blue-500 hover:bg-blue-700 md:bg-green-500 lg:bg-red-500 text-white font-bold py-2 px-4 rounded">
+    <button className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700">
       {props.title}
     </button>
   );
