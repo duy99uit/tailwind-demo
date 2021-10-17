@@ -1,14 +1,19 @@
+import CategorySection from 'components/CategorySection';
+import Header from 'components/Header';
+import MainHeader from 'components/MainSection';
+import ProductFeatureSection from 'components/ProductFeatureSection';
+import PromotionSection from 'components/PromotionSection';
 import React from 'react';
 import './App.css';
-import DemoComponentHeader from 'components/DemoComponentHeader/DemoComponentHeader';
-import Button from 'components/Button/Button';
 
 function App() {
   return (
-    <div className="App">
-      <Button title="demo"/>
-     {/* <DemoComponentHeader/> */}
-    </div>
+    <>
+      <MainHeader />
+      <PromotionSection/>
+      <ProductFeatureSection/>
+      <CategorySection/>
+    </>
   );
 }
 
