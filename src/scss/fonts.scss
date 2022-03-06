@@ -56,3 +56,12 @@
   font-display: swap;
   src: url(vars.$fonts-path + '/roboto/Roboto-BoldItalic.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  line-height: 18;
+  src: url(vars.$fonts-path + '/neue-helvetica/Helvetica Neue LT 65 Medium.ttf') format('truetype');
+}
