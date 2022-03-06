@@ -2,73 +2,7 @@ import { Fragment, useState } from 'react';
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
 import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline';
 
-const navigation = {
-  categories: [
-    {
-      id: 'men',
-      name: 'Men',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
-          imageAlt:
-            'Drawstring top with elastic loop closure and textured interior padding.',
-        },
-        {
-          name: 'Artwork Tees',
-          href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
-          imageAlt:
-            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
-        },
-      ],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
-          ],
-        },
-        {
-          id: 'accessories',
-          name: 'Accessories',
-          items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
-          ],
-        },
-        {
-          id: 'brands',
-          name: 'Brands',
-          items: [
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-          ],
-        },
-      ],
-    },
-  ],
-  pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
-  ],
-};
+import { navigation } from './type';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
@@ -125,7 +59,7 @@ function MainHeader() {
                         className={({ selected }) =>
                           classNames(
                             selected
-                              ? 'text-indigo-600 border-indigo-600'
+                              ? 'text-black border-black'
                               : 'text-gray-900 border-transparent',
                             'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium',
                           )
@@ -266,7 +200,7 @@ function MainHeader() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'border-indigo-600 text-indigo-600'
+                                  ? 'border-black  text-black'
                                   : 'border-transparent text-gray-700 hover:text-gray-800',
                                 'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px',
                               )}
