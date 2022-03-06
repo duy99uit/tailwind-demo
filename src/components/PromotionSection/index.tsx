@@ -1,4 +1,4 @@
-import Button from "components/Button/Button"
+import Button from "@/components/Button/Button"
 
 /* This example requires Tailwind CSS v2.0+ */
 function PromotionSection() {

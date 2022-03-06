@@ -1,0 +1,14 @@
+@use '@/scss/fonts';
+@use '~tailwindcss/tailwind';
+@use 'sass:map';
+@use 'sass:meta';
+@use '@/scss/vars' as vars;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: vars.$gray-700;
+}

@@ -1,0 +1,58 @@
+//ENV
+@use '@/scss/vars' as vars;
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(vars.$fonts-path + '/roboto/Roboto-BoldItalic.ttf') format('truetype');
+}
