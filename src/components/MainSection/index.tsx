@@ -162,7 +162,7 @@ function MainHeader() {
 
       <header className="bg-white relative">
         <p className="bg-black h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
-          Download the app to access everything !
+          Enjoy Complimentary Premium Shipping and Free Returns
         </p>
 
         <nav aria-label="Top" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -179,7 +179,7 @@ function MainHeader() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto"
@@ -219,7 +219,7 @@ function MainHeader() {
                             leaveTo="opacity-0"
                           >
                             <Popover.Panel className="absolute top-full inset-x-0 text-sm text-gray-500">
-                              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
+            
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
                                 aria-hidden="true"

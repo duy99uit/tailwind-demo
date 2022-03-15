@@ -1,19 +1,18 @@
-import MainHeader from '@/components/MainSection';
+import HomePage from '@/pages/HomePage/HomePage';
+import NotFoundPage from '@/pages/NotFoundPage/NotFoundPage';
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import CategorySection from './components/CategorySection';
-import ProductFeatureSection from './components/ProductFeatureSection';
-import PromotionSection from './components/PromotionSection';
-
+import ProducDetail from './pages/ProductDetail';
 
 function App() {
   return (
-    <>
-      <MainHeader />
-      <PromotionSection />
-      <ProductFeatureSection />
-      <CategorySection />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/company" element={<ProducDetail />} />
+
+      <Route element={<NotFoundPage />} />
+    </Routes>
   );
 }
 

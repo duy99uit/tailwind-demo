@@ -99,7 +99,7 @@ export const navigation = {
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
+    { name: 'Company', href: '/company' },
+    { name: 'Stores', href: '/stores' },
   ],
 };
