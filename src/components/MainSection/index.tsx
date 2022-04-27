@@ -1,7 +1,6 @@
-import { Fragment, useState } from 'react';
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
 import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline';
-
+import { Fragment, useState } from 'react';
 import { navigation } from './type';
 
 function classNames(...classes: any) {
@@ -12,10 +11,9 @@ function MainHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white sticky top-0 left-0 z-50">
-      {/* Mobile menu */}
+    <div className="bg-white sticky top-0 left-0 z-10">
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="fixed inset-0 flex  lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -30,14 +28,14 @@ function MainHeader() {
 
           <Transition.Child
             as={Fragment}
-            enter="transition ease-in-out duration-300 transform"
+            enter="transition ease-in-out duration-300 transform "
             enterFrom="-translate-x-full"
             enterTo="translate-x-0"
             leave="transition ease-in-out duration-300 transform"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
           >
-            <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+            <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto  ">
               <div className="px-4 pt-5 pb-2 flex">
                 <button
                   type="button"
@@ -219,7 +217,6 @@ function MainHeader() {
                             leaveTo="opacity-0"
                           >
                             <Popover.Panel className="absolute top-full inset-x-0 text-sm text-gray-500">
-            
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
                                 aria-hidden="true"
